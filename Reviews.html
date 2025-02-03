@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+	<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <style>
+	    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+		
+        body {
+           font-family: 'Roboto', Arial, sans-serif; 
+           background: url('REVIEWS.jpg') no-repeat center center fixed;
+           background-size: cover;	
+		   color: #ffffff;
+        }
+		
+		 header {
+        background-color: #f3f3f3;
+        padding: 15px 20px;
+        border-top: 8px solid #e0e0e0; 
+        position: relative; 
+        }
+
+		.container {
+            width: 100%;
+            margin: auto;
+            background: #4A321E;
+            padding: 100px;
+            border-radius: 10px;
+            border: none;
+        }
+	    
+		.navbar {
+     display: flex;
+     justify-content: center;
+     gap: 40px;
+     background-color: #f3f3f3;
+     padding: 10px 0;
+     border-bottom: 2px solid #e0e0e0;
+    }
+
+    .navbar a {
+    text-decoration: none;
+    color: #5a5a5a;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+    }
+
+    .navbar a:hover {
+      color: #E9BC80;
+    }
+		
+		.welcome-section {
+        text-align: left;
+        color: #ffffff;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+        padding: 150px 50px; 
+        }
+
+        .welcome-section h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        }
+
+        .welcome-section p {
+        font-size: 20px;
+        font-weight: bold;
+        }
+
+		.logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        }
+
+        .logo img {
+        height: 100px;
+        margin-right: 10px;
+        }
+
+       .logo span {
+       font-size: 24px;
+       font-weight: bold;
+       color: #5a5a5a;
+       }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="time"] {
+            display: block;
+            margin-bottom: 15px;
+            padding: 5px;
+            width: 100%;
+            max-width: 300px;
+            font-size: 1em;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+        }
+
+        textarea {
+            width: 100%;
+            max-width: 300px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid #ffffff
+            border-radius: 4px;
+        }
+
+        input[type="checkbox"] {
+            margin-top: 10px;
+        }
+		
+		input {
+        background-color: #a59076; 
+        color: black; 
+        border: 2px #a59076; 
+        }
+    </style>
+	<head>
+	 <script>
+        function submitFeedback() {
+            document.body.innerHTML = "<div style='display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center;'><h2 style='font-size: 2em;'>Thank you for your feedback, kindly exit this page :)</h2></div>";
+        }
+    </script>
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="Logo w_o Bg.png" alt="Logo w_o Bg">
+  </div>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="Menu.html">Menu</a>
+        <a href="ContactUs.html">Contact Us</a>
+        <a href="Reviews.html">Reviews</a>
+    </div>
+	</header>
+
+    <form action="mailto:patriciajuliennepineda@makatiscience.edu.ph" method="post" enctype="text/plain">
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" placeholder="Input your name here" size="30" maxlength="25">
+        
+        <label for="mname">Middle name</label>
+        <input type="text" name="mname">
+        
+        <label for="lname">Last name</label>
+        <input type="text" name="lname">
+
+        <label for="date">Date today:</label>
+        <input type="date" name="date">
+
+        <label for="time">Time:</label>
+        <input type="time" name="time">
+
+        <br>
+        <label>1. How easy was it to navigate our website?</label><br>
+        <input type="checkbox" name="difficulty" value="Very easy"> Very easy<br>
+        <input type="checkbox" name="difficulty" value="Easy"> Easy<br>
+        <input type="checkbox" name="difficulty" value="Neutral"> Neutral<br>
+        <input type="checkbox" name="difficulty" value="Difficult"> Difficult<br>
+        <input type="checkbox" name="difficulty" value="Very Difficult"> Very Difficult<br>
+		<br>
+		
+		<br>
+		<label>2. How would you rate the overall design of the website?</label><br>
+        <input type="checkbox" name="difficulty" value="Excellent"> Excellent<br>
+        <input type="checkbox" name="difficulty" value="Good"> Good<br>
+        <input type="checkbox" name="difficulty" value="Average"> Average<br>
+        <input type="checkbox" name="difficulty" value="Poor"> Poor<br>
+        <input type="checkbox" name="difficulty" value="Very poor"> Very poor<br>
+		<br>
+   
+        <br>
+        <label for="visit-again">3. Did you find all the information you were looking for?</label><br>
+        <select name="visit-again" id="visit-again">
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+        </select><br>
+		<br>
+         
+		<br>
+        <label>4. How was the website's speed and responsiveness</label><br>
+        <input type="checkbox" name="difficulty" value="Excellent"> Excellent<br>
+        <input type="checkbox" name="difficulty" value="Good"> Good<br>
+        <input type="checkbox" name="difficulty" value="Average"> Average<br>
+        <input type="checkbox" name="difficulty" value="Poor"> Poor<br>
+        <input type="checkbox" name="difficulty" value="Very poor"> Very poor<br>
+		<br>
+		
+		<br>
+		<label>5. How satsfied are you with your experience on our website?</label><br>
+        <input type="checkbox" name="difficulty" value="Very satisfied"> Very satisfied<br>
+        <input type="checkbox" name="difficulty" value="Satisfied"> Satisfied<br>
+        <input type="checkbox" name="difficulty" value="Neutral"> Neutral<br>
+        <input type="checkbox" name="difficulty" value="Unsatisfied"> Unsatisfied<br>
+        <input type="checkbox" name="difficulty" value="Very unsatisfied"> Very unsatisfied<br>
+		<br>
+
+       <label for="message">Leave your comments/suggestions here!</label><br>
+        <textarea name="messages" placeholder="We appreciate any type of feedback!"></textarea><br><br>
+		
+        <br><br>
+         <button onclick="submitFeedback()">Submit</button>
+    </form>
+
+</body>
+</html>
